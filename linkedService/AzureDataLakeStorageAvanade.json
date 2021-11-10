@@ -1,0 +1,12 @@
+{
+	"name": "AzureDataLakeStorageAvanade",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://azstoragevanade.dfs.core.windows.net/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDI0QzZFMjA3LTc5MjctNDgyNy1BOUU1LUUwMzM4MEMzNkQ2OF81ZWU3MjhkMy1kNDc1LTQxNGMtOGZhNC05MWY4ZDAzOWMxMjIiDQp9"
+		}
+	}
+}
