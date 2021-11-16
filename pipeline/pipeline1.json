@@ -30,7 +30,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
-						"sqlReaderQuery": " SELECT \n      *\n  FROM [SalesLT].[Customer]\n  where [ModifiedDate] > '@(activity('Lookup').output.firstRow.WalterMarkValue)'\nand [ModifiedDate] <= '@(activity('Lookup1').output.firstRow.ModifiedDate)'",
+						"sqlReaderQuery": "SELECT\n*\nFROM [SalesLT].[Customer]\nwhere [ModifiedDate] > '@{activity('LookupLastWalterM').output.firstRow.WalterMarkValue}' and [ModifiedDate] <= '@{activity('LookupNewValue').output.firstRow.ModifiedDate}'",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
