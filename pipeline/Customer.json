@@ -82,7 +82,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
-						"sqlReaderQuery": "SELECT\n      isnull(max([WalterMarkValue]),'1900-01-01') as [WalterMarkValue]\n  FROM [Control].[WalterMark]\n  where nm_Table = '@pipeline().Pipeline'",
+						"sqlReaderQuery": "SELECT\n      isnull(max([WalterMarkValue]),'1900-01-01') as [WalterMarkValue]\n  FROM [Control].[WalterMark]\n  where nm_Table = '@{pipeline().Pipeline}'",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
