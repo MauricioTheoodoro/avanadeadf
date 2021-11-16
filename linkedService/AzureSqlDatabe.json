@@ -1,0 +1,10 @@
+{
+	"name": "AzureSqlDatabe",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://AKVAvanade.vault.azure.net/"
+		}
+	}
+}
